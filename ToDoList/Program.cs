@@ -6,13 +6,30 @@ Console.WriteLine("[E]xit");
 
 var userInput = Console.ReadLine();
 
-var number = 10;
-var isLarger = number > 4 && number < 9;
-var isLarger2 = number == 2 || number > 6 || number < 200;
+void PrintSelectedOption(string selectedOption)
+{
+  System.Console.WriteLine("Selected option: " + selectedOption);
+}
 
-
-
-// bool someBool = true;
-// var someOther = false;
+if (userInput == "S")
+{
+  PrintSelectedOption("See all TODO'S");
+}
+else if (userInput == "A")
+{
+  PrintSelectedOption("Add a TODO");
+}
+else if (userInput == "R")
+{
+  PrintSelectedOption("Remove a TODO");
+}
+else if (userInput == "E")
+{
+  PrintSelectedOption("Exit");
+}
+else
+{
+  System.Console.WriteLine("You fudged up dawg");
+}
 
 Console.ReadKey();
