@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList", "ToDoList\ToDoLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{2E185F01-7EE1-49DF-95D3-99A62289DC3B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradingSystem", "GradingSystem\GradingSystem.csproj", "{E0D006F4-BFE5-4128-8BF8-BA8B9C499AA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,18 @@ Global
 		{2E185F01-7EE1-49DF-95D3-99A62289DC3B}.Release|x64.Build.0 = Release|Any CPU
 		{2E185F01-7EE1-49DF-95D3-99A62289DC3B}.Release|x86.ActiveCfg = Release|Any CPU
 		{2E185F01-7EE1-49DF-95D3-99A62289DC3B}.Release|x86.Build.0 = Release|Any CPU
+		{E0D006F4-BFE5-4128-8BF8-BA8B9C499AA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0D006F4-BFE5-4128-8BF8-BA8B9C499AA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0D006F4-BFE5-4128-8BF8-BA8B9C499AA7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E0D006F4-BFE5-4128-8BF8-BA8B9C499AA7}.Debug|x64.Build.0 = Debug|Any CPU
+		{E0D006F4-BFE5-4128-8BF8-BA8B9C499AA7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E0D006F4-BFE5-4128-8BF8-BA8B9C499AA7}.Debug|x86.Build.0 = Debug|Any CPU
+		{E0D006F4-BFE5-4128-8BF8-BA8B9C499AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0D006F4-BFE5-4128-8BF8-BA8B9C499AA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0D006F4-BFE5-4128-8BF8-BA8B9C499AA7}.Release|x64.ActiveCfg = Release|Any CPU
+		{E0D006F4-BFE5-4128-8BF8-BA8B9C499AA7}.Release|x64.Build.0 = Release|Any CPU
+		{E0D006F4-BFE5-4128-8BF8-BA8B9C499AA7}.Release|x86.ActiveCfg = Release|Any CPU
+		{E0D006F4-BFE5-4128-8BF8-BA8B9C499AA7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,20 +1,38 @@
-﻿System.Console.WriteLine("Provide a number!");
-string userInput = System.Console.ReadLine();
-int number = int.Parse(userInput);
-System.Console.WriteLine(number);
+﻿Console.WriteLine("Hello, World!");
+Console.WriteLine("[S]ee all TODOs");
+Console.WriteLine("[A]dd a TODO!");
+Console.WriteLine("[R]emove a TODO!");
+Console.WriteLine("[E]xit");
 
-// Console.WriteLine("Hello, World!");
-// Console.WriteLine("[S]ee all TODOs");
-// Console.WriteLine("[A]dd a TODO!");
-// Console.WriteLine("[R]emove a TODO!");
-// Console.WriteLine("[E]xit");
+var userInput = Console.ReadLine();
 
-// var userInput = Console.ReadLine();
+switch (userInput)
+{
+  case "S":
+  case "s":
+    PrintSelectedOption("See all TODO's");
+    break;
+  case "A":
+  case "a":
+    PrintSelectedOption("Add a TODO");
+    break;
+  case "R":
+  case "r":
+    PrintSelectedOption("Remove a TODO");
+    break;
+  case "E":
+  case "e":
+    PrintSelectedOption("Exit");
+    break;
+  default:
+    Console.WriteLine("Dog you messed up hard af fam😩");
+    break;
+}
 
-// void PrintSelectedOption(string selectedOption)
-// {
-//   System.Console.WriteLine("Selected option: " + selectedOption);
-// }
+void PrintSelectedOption(string selectedOption)
+{
+  System.Console.WriteLine("Selected option: " + selectedOption);
+}
 
 // if (userInput == "S")
 // {
@@ -36,21 +54,5 @@ System.Console.WriteLine(number);
 // {
 //   System.Console.WriteLine("You fudged up dawg");
 // }
-
-int Add(int a, int b)
-{
-  return a + b;
-}
-
-bool IsLong(string input)
-{
-  return input.Length > 10;
-}
-
-bool isLong = IsLong(userInput);
-System.Console.WriteLine(isLong);
-
-var banana = Add(12, 15);
-System.Console.WriteLine("12 + 15 = " + banana);
 
 Console.ReadKey();
