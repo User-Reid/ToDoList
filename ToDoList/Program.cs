@@ -4,10 +4,12 @@ Console.WriteLine("[A]dd a TODO!");
 Console.WriteLine("[R]emove a TODO!");
 Console.WriteLine("[E]xit");
 
-string userInput = Console.ReadLine();
-Console.WriteLine("User input:" + userInput);
-userInput = "Taco";
+var userInput = Console.ReadLine();
 
-var result = "abc" + "def" + "ghi";
+bool taco = userInput == "ABC";
+
+
+// bool someBool = true;
+// var someOther = false;
 
 Console.ReadKey();
