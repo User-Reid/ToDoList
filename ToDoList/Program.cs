@@ -6,5 +6,8 @@ Console.WriteLine("[E]xit");
 
 string userInput = Console.ReadLine();
 Console.WriteLine("User input:" + userInput);
+userInput = "Taco";
+
+var result = "abc" + "def" + "ghi";
 
 Console.ReadKey();
