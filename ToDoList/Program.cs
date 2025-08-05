@@ -1,10 +1,15 @@
-﻿Console.WriteLine("Hello, World!");
-Console.WriteLine("[S]ee all TODOs");
-Console.WriteLine("[A]dd a TODO!");
-Console.WriteLine("[R]emove a TODO!");
-Console.WriteLine("[E]xit");
+﻿System.Console.WriteLine("Provide a number!");
+string userInput = System.Console.ReadLine();
+int number = int.Parse(userInput);
+System.Console.WriteLine(number);
 
-var userInput = Console.ReadLine();
+// Console.WriteLine("Hello, World!");
+// Console.WriteLine("[S]ee all TODOs");
+// Console.WriteLine("[A]dd a TODO!");
+// Console.WriteLine("[R]emove a TODO!");
+// Console.WriteLine("[E]xit");
+
+// var userInput = Console.ReadLine();
 
 // void PrintSelectedOption(string selectedOption)
 // {
