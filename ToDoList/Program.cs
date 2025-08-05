@@ -6,30 +6,46 @@ Console.WriteLine("[E]xit");
 
 var userInput = Console.ReadLine();
 
-void PrintSelectedOption(string selectedOption)
+// void PrintSelectedOption(string selectedOption)
+// {
+//   System.Console.WriteLine("Selected option: " + selectedOption);
+// }
+
+// if (userInput == "S")
+// {
+//   PrintSelectedOption("See all TODO'S");
+// }
+// else if (userInput == "A")
+// {
+//   PrintSelectedOption("Add a TODO");
+// }
+// else if (userInput == "R")
+// {
+//   PrintSelectedOption("Remove a TODO");
+// }
+// else if (userInput == "E")
+// {
+//   PrintSelectedOption("Exit");
+// }
+// else
+// {
+//   System.Console.WriteLine("You fudged up dawg");
+// }
+
+int Add(int a, int b)
 {
-  System.Console.WriteLine("Selected option: " + selectedOption);
+  return a + b;
 }
 
-if (userInput == "S")
+bool IsLong(string input)
 {
-  PrintSelectedOption("See all TODO'S");
+  return input.Length > 10;
 }
-else if (userInput == "A")
-{
-  PrintSelectedOption("Add a TODO");
-}
-else if (userInput == "R")
-{
-  PrintSelectedOption("Remove a TODO");
-}
-else if (userInput == "E")
-{
-  PrintSelectedOption("Exit");
-}
-else
-{
-  System.Console.WriteLine("You fudged up dawg");
-}
+
+bool isLong = IsLong(userInput);
+System.Console.WriteLine(isLong);
+
+var banana = Add(12, 15);
+System.Console.WriteLine("12 + 15 = " + banana);
 
 Console.ReadKey();
