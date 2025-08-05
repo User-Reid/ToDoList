@@ -15,8 +15,8 @@ number = 3;
 Console.WriteLine(number);
 
 int a = 5, b = 2;
-string pie = "pie", taco = "taco";
+string banana = "pie", taco = "taco";
 Console.WriteLine(a);
-Console.WriteLine(pie);
+Console.WriteLine(banana);
 
 Console.ReadKey();
