@@ -1,18 +1,7 @@
-﻿int a = 10;
-int b = 5;
-a++;
-b--;
-Console.WriteLine(a);
-Console.WriteLine(b);
+﻿var word = "A";
+var number = 5;
 
 
-Console.WriteLine("Addition:" + (a + b));
-Console.WriteLine("Subtraction:" + (a - b));
-Console.WriteLine("Multiplication:" + a * b);
-Console.WriteLine("Division:" + a / b);
-Console.WriteLine("Reid" + " " + "Herrera");
-string word = "abc";
-Console.WriteLine(word + a);
 
 Console.ReadKey();
 
