@@ -12,3 +12,4 @@ C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\ToDoList\ToDoList\obj\Debug\net9.0
 C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\ToDoList\ToDoList\obj\Debug\net9.0\ToDoList.pdb
 C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\ToDoList\ToDoList\obj\Debug\net9.0\ToDoList.genruntimeconfig.cache
 C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\ToDoList\ToDoList\obj\Debug\net9.0\ref\ToDoList.dll
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\ToDoList\ToDoList\obj\Debug\net9.0\ToDoList.sourcelink.json
