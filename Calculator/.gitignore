@@ -1,0 +1,25 @@
+# Build results
+/bin/
+/obj/
+
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# Visual Studio user-specific files
+*.user
+*.suo
+
+# NuGet files
+project.lock.json
+project.assets.json
+*.nupkg
+*.snupkg
+*.nuget.props
+*.nuget.targets
+*.csproj.nuget.g.props
+*.csproj.nuget.g.targets
+
+# Logs and temp
+*.log
+*.tmp
