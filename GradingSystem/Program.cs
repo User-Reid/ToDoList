@@ -1,21 +1,23 @@
 ﻿string ConvertPointsToGrade(int points)
 {
-  switch(points) {
+  switch (points)
+  {
     case 10:
     case 9:
-    return "A";
+      return "A";
     case 8:
     case 7:
     case 6:
-    return "B";
+      return "B";
     case 5:
     case 4:
     case 3:
-    return "C";
+      return "C";
     case 2:
     case 1:
-    return "D";
+      return "D";
     default:
-    return "!";
+      return "!";
   }
+  ThreadStart test
 }
