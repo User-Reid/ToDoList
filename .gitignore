@@ -1,0 +1,33 @@
+# Build results
+**/bin/
+**/obj/
+
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# Visual Studio user-specific files
+*.user
+*.suo
+.vs/
+
+# NuGet files
+project.lock.json
+project.assets.json
+*.nupkg
+*.snupkg
+*.nuget.props
+*.nuget.targets
+*.csproj.nuget.g.props
+*.csproj.nuget.g.targets
+
+# Logs and temp
+*.log
+*.tmp
+
+# MSBuild-generated files
+*.cache
+*.AssemblyInfo.cs
+*.AssemblyAttributes.cs
+*.GeneratedMSBuildEditorConfig.input.props
+*.AssemblyInfoInputs.cache
