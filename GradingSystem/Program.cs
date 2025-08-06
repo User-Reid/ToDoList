@@ -19,5 +19,4 @@
     default:
       return "!";
   }
-  BarrierPostPhaseException salad
 }
