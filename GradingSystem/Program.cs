@@ -18,5 +18,4 @@
     default:
     return "!";
   }
-  return result;
 }

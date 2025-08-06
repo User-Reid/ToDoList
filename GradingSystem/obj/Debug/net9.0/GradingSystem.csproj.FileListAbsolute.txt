@@ -1,0 +1,5 @@
+C:\Users\reidh\Desktop\Coding\Repositories\C#\ToDoList\GradingSystem\obj\Debug\net9.0\GradingSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\reidh\Desktop\Coding\Repositories\C#\ToDoList\GradingSystem\obj\Debug\net9.0\GradingSystem.AssemblyInfoInputs.cache
+C:\Users\reidh\Desktop\Coding\Repositories\C#\ToDoList\GradingSystem\obj\Debug\net9.0\GradingSystem.AssemblyInfo.cs
+C:\Users\reidh\Desktop\Coding\Repositories\C#\ToDoList\GradingSystem\obj\Debug\net9.0\GradingSystem.csproj.CoreCompileInputs.cache
+C:\Users\reidh\Desktop\Coding\Repositories\C#\ToDoList\GradingSystem\obj\Debug\net9.0\GradingSystem.sourcelink.json
