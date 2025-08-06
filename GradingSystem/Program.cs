@@ -19,5 +19,4 @@
     default:
       return "!";
   }
-  ThreadStart test
 }
