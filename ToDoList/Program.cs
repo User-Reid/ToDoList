@@ -1,10 +1,11 @@
-﻿using System.Globalization;
-
-int taco = 0;
+﻿int taco = 0;
 
 while (taco < 10)
 {
-  taco = taco + 1;
+  // taco = taco + 1;
+  // taco += 1
+  // taco++
+  ++taco;
   System.Console.WriteLine($"Number is: {taco}");
 }
 
