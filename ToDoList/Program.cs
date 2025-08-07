@@ -1,17 +1,15 @@
-﻿
-string RepeatCharacter(char character, int targetLength)
+﻿string RepeatCharMeth(char banana, int salad)
 {
         string x = "";
         do
         {
-                x += character;
+                x += banana;
         }
-        while (x.Length < targetLength);
+        while (x.Length < salad);
         return x;
-        }
+}
 
-Console.WriteLine($"The result is: {RepeatCharacter('b', 5)}");
-
+System.Console.WriteLine($"{RepeatCharMeth('a', 0)}");
 
 
 // string word;
