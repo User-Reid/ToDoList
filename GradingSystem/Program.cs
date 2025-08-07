@@ -8,3 +8,5 @@
     _ => 'D', //Anything below a 50 is a D.
   };
 }
+
+ConvertPointsToGrade(23);
