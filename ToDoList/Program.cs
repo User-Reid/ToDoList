@@ -1,15 +1,30 @@
-﻿int CalculateStupidSum(int firstNumber, int secondNumber)
+﻿
+string RepeatCharacter(char character, int targetLength)
 {
-        int sum = 0;
-        while (firstNumber <= secondNumber)
+        string x = "";
+        do
         {
-                sum += firstNumber;
-                firstNumber++;
+                x += character;
         }
-        return sum;
-}
+        while (x.Length < targetLength);
+        return x;
+        }
 
-System.Console.WriteLine($"{CalculateStupidSum(10, 5)}");
+Console.WriteLine($"The result is: {RepeatCharacter('b', 5)}");
+
+
+
+// string word;
+
+// do
+// {
+//         System.Console.WriteLine("Enter a word longer than 10 letters");
+//         word = System.Console.ReadLine();
+// }
+// while (word.Length <= 10);
+
+// System.Console.WriteLine("The loop is finished");
+// Console.ReadKey();
 
 // Console.WriteLine("Hello, World!");
 // Console.WriteLine("[S]ee all TODOs");
