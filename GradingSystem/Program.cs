@@ -1,22 +1,10 @@
-﻿string ConvertPointsToGrade(int points)
+﻿char ConvertPointsToGrade(int points)
 {
-  switch (points)
+  return points switch
   {
-    case 10:
-    case 9:
-      return "A";
-    case 8:
-    case 7:
-    case 6:
-      return "B";
-    case 5:
-    case 4:
-    case 3:
-      return "C";
-    case 2:
-    case 1:
-      return "D";
-    default:
-      return "!";
-  }
+    >= 90 => 'A',
+    >= 80 => 'B',
+    >= 50 => 'C',
+    _ => 'D', //Anything below a 50 is a D.
+  };
 }
