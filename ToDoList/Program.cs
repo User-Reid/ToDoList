@@ -1,18 +1,15 @@
-﻿int taco = 0;
-
-while (taco < 10)
+﻿int CalculateStupidSum(int firstNumber, int secondNumber)
 {
-  // taco = taco + 1;
-  // taco += 1
-  // taco++
-  ++taco;
-  System.Console.WriteLine($"Number is: {taco}");
+        int sum = 0;
+        while (firstNumber <= secondNumber)
+        {
+                sum += firstNumber;
+                firstNumber++;
+        }
+        return sum;
 }
 
-System.Console.WriteLine("The loop is now finshed 😀");
-
-
-
+System.Console.WriteLine($"{CalculateStupidSum(10, 5)}");
 
 // Console.WriteLine("Hello, World!");
 // Console.WriteLine("[S]ee all TODOs");
