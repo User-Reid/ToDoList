@@ -1,15 +1,16 @@
-﻿int Factoral(int number)
-{
-  int result = 1;
-  for (int i = 1; i < number; ++i)
-  {
-    result *= i;
-    System.Console.WriteLine($"The factoral of {number} is {result}");
-  }
-  return result;
-}
+﻿int userNumber;
 
-Factoral(5);
+do
+{
+  System.Console.WriteLine("Please enter a number larger than 10😀!");
+  string taco = Console.ReadLine();
+
+  if (taco == "stop")
+  {
+    break;
+  }
+  userNumber = int.Parse(taco);
+} while (userNumber <= 10);
 
 System.Console.WriteLine("The loop is finished");
 Console.Read();
