@@ -1,15 +1,15 @@
-﻿int Factorial(int number)
+﻿int Factoral(int number)
 {
   int result = 1;
-  for (int i = 1; i <= number; ++i)
+  for (int i = 1; i < number; ++i)
   {
     result *= i;
-    System.Console.WriteLine($"{number} is {result}");
+    System.Console.WriteLine($"The factoral of {number} is {result}");
   }
   return result;
 }
 
-Factorial(5);
+Factoral(5);
 
 System.Console.WriteLine("The loop is finished");
 Console.Read();
