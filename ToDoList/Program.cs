@@ -1,10 +1,10 @@
-﻿for (int i = 0; i < 5; ++i)
+﻿for (int i = 0; i < 5; i += 2)
 {
-        System.Console.WriteLine("Hello");
+        System.Console.WriteLine("Loop run " + i);
 }
 
 System.Console.WriteLine("The loop is finished");
-Console.ReadKey();
+Console.Read();
 
 // string word;
 
