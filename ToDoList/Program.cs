@@ -1,16 +1,10 @@
-﻿string RepeatCharMeth(char banana, int salad)
+﻿for (int i = 0; i < 5; ++i)
 {
-        string x = "";
-        do
-        {
-                x += banana;
-        }
-        while (x.Length < salad);
-        return x;
+        System.Console.WriteLine("Hello");
 }
 
-System.Console.WriteLine($"{RepeatCharMeth('a', 0)}");
-
+System.Console.WriteLine("The loop is finished");
+Console.ReadKey();
 
 // string word;
 
