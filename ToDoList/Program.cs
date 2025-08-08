@@ -1,7 +1,15 @@
-﻿for (int i = 0; i < 5; i += 2)
+﻿int Factorial(int number)
 {
-        System.Console.WriteLine("Loop run " + i);
+  int result = 1;
+  for (int i = 1; i <= number; ++i)
+  {
+    result *= i;
+    System.Console.WriteLine($"{number} is {result}");
+  }
+  return result;
 }
+
+Factorial(5);
 
 System.Console.WriteLine("The loop is finished");
 Console.Read();
