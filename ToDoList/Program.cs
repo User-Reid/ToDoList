@@ -1,16 +1,34 @@
-﻿bool IsWordPresentInCollection(string[] words, string wordToBeChecked)
-{
-        for (int i = 0; i < words.Length; i++)
-        {
-                if (words[i] == wordToBeChecked)
-                {
-                        return true;
-                }
-        }
-                        return false;
-        }
+﻿char[,] letters = new char[2, 3];
 
-System.Console.WriteLine($"{IsWordPresentInCollection(["one", "two", "three", "banana"], "asdflk;j")}");
+letters[0, 0] = 'A';
+letters[0, 1] = 'B';
+letters[0, 2] = 'C';
+letters[1, 0] = 'D';
+letters[1, 1] = 'E';
+letters[1, 2] = 'F';
+
+var height = letters.GetLength(0);
+var width = letters.GetLength(1);
+System.Console.WriteLine($"Height is {height}");
+System.Console.WriteLine($"Width is {width}");
+
+for (int i = 0; i < height; i++)
+{
+        // System.Console.WriteLine($"Yo, the height is {i}");
+        for (int j = 0; j < width; j++)
+        {
+                // System.Console.WriteLine($"Ayo, the width is {j}");
+                System.Console.WriteLine($"Ayo, the letters in the 2 dimentional array are {letters[i,j]} with the dimensions being {width}x{height}");
+        }
+}
+
+var letters2 = new char[,]
+{
+        {'A', 'B', 'D'},
+        {'D', 'E', 'F'},
+};
+
+
 
 Console.ReadKey();
 
