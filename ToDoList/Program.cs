@@ -1,26 +1,14 @@
-﻿int FindMax(int[,] numbers)
+﻿var words = new[] { "one", "two", "three", "four" };
+
+// for (int i = 0; i < words.Length; i++)
+// {
+//         System.Console.WriteLine($"{words[i]}");
+// }
+
+foreach (string taco in words)
 {
-        if (numbers.GetLength(0) == 0 || numbers.GetLength(1) == 0)
-        {
-                return -1;
-        }
-
-        int max = numbers[0, 0];
-        for (int i = 0; i < numbers.GetLength(0); i++)
-        {
-                for (int j = 0; j < numbers.GetLength(1); j++)
-                {
-                        int taco = numbers[i, j];
-                        if (taco > max)
-                        {
-                                max = taco;
-                        }
-                }
-        }
-        return max;
+        System.Console.WriteLine($"{taco}");
 }
-
-System.Console.WriteLine($"{FindMax(new int[,] {{2,6}, {38,9}, {892, 43}, {1,1}})}");
 
 Console.ReadKey();
 
