@@ -1,34 +1,26 @@
-﻿char[,] letters = new char[2, 3];
-
-letters[0, 0] = 'A';
-letters[0, 1] = 'B';
-letters[0, 2] = 'C';
-letters[1, 0] = 'D';
-letters[1, 1] = 'E';
-letters[1, 2] = 'F';
-
-var height = letters.GetLength(0);
-var width = letters.GetLength(1);
-System.Console.WriteLine($"Height is {height}");
-System.Console.WriteLine($"Width is {width}");
-
-for (int i = 0; i < height; i++)
+﻿int FindMax(int[,] numbers)
 {
-        // System.Console.WriteLine($"Yo, the height is {i}");
-        for (int j = 0; j < width; j++)
+        if (numbers.GetLength(0) == 0 || numbers.GetLength(1) == 0)
         {
-                // System.Console.WriteLine($"Ayo, the width is {j}");
-                System.Console.WriteLine($"Ayo, the letters in the 2 dimentional array are {letters[i,j]} with the dimensions being {width}x{height}");
+                return -1;
         }
+
+        int max = numbers[0, 0];
+        for (int i = 0; i < numbers.GetLength(0); i++)
+        {
+                for (int j = 0; j < numbers.GetLength(1); j++)
+                {
+                        int taco = numbers[i, j];
+                        if (taco > max)
+                        {
+                                max = taco;
+                        }
+                }
+        }
+        return max;
 }
 
-var letters2 = new char[,]
-{
-        {'A', 'B', 'D'},
-        {'D', 'E', 'F'},
-};
-
-
+System.Console.WriteLine($"{FindMax(new int[,] {{2,6}, {38,9}, {892, 43}, {1,1}})}");
 
 Console.ReadKey();
 
