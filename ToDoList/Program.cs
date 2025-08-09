@@ -1,12 +1,18 @@
-﻿for (int i = 0; i < 4; ++i)
+﻿bool IsWordPresentInCollection(string[] words, string wordToBeChecked)
 {
-        for (int j = 0; j < 3; ++j)
+        for (int i = 0; i < words.Length; i++)
         {
-                System.Console.WriteLine($"i is {i}, j is {j}");
+                if (words[i] == wordToBeChecked)
+                {
+                        return true;
+                }
         }
-}
-System.Console.WriteLine("The loop is finished");
-Console.Read();
+                        return false;
+        }
+
+System.Console.WriteLine($"{IsWordPresentInCollection(["one", "two", "three", "banana"], "asdflk;j")}");
+
+Console.ReadKey();
 
 // string word;
 
