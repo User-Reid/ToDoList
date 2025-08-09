@@ -1,17 +1,10 @@
-﻿int userNumber;
-
-do
+﻿for (int i = 0; i < 4; ++i)
 {
-  System.Console.WriteLine("Please enter a number larger than 10😀!");
-  string taco = Console.ReadLine();
-
-  if (taco == "stop")
-  {
-    break;
-  }
-  userNumber = int.Parse(taco);
-} while (userNumber <= 10);
-
+        for (int j = 0; j < 3; ++j)
+        {
+                System.Console.WriteLine($"i is {i}, j is {j}");
+        }
+}
 System.Console.WriteLine("The loop is finished");
 Console.Read();
 
