@@ -18,28 +18,22 @@ do
   userInput = Console.ReadLine();
 } while (!possibleOptions.Contains(userInput));
 
-System.Console.WriteLine("The Do-While loop is done.");
-
 switch (userInput)
 {
   case "E":
   case "e":
-    System.Console.WriteLine("Exit");
-    shallExit = true;
+      Exit();
     break;
   case "S":
   case "s":
-    System.Console.WriteLine("See all TODO's");
       SeeAllTodos();
     break;
   case "A":
   case "a":
-    System.Console.WriteLine("Add TODO");
       AddToDo();
     break;
   case "R":
   case "r":
-    System.Console.WriteLine("Exit");
       RemoveToDo();
     break;
   default:
@@ -51,15 +45,25 @@ switch (userInput)
 
 void SeeAllTodos()
 {
+  if (toDoList.Count == 0)
+  {
+    System.Console.WriteLine("You aint got shit to do cuzin");
+  }
+  else
+  {
+  System.Console.WriteLine("See all TODO's");
   for (int i = 0; i < toDoList.Count; i++)
   {
     System.Console.WriteLine($"{i + 1}: {toDoList[i]}");
+  }
   }
 }
 
 List<string> AddToDo()
 {
   string addedTask;
+  System.Console.WriteLine("Add TODO");
+
   do
   {
     System.Console.WriteLine("What task would you like to add big dog?");
@@ -74,21 +78,36 @@ List<string> AddToDo()
 List<string> RemoveToDo()
 {
   int indexInput;
-  do
+  string input;
+  if (toDoList.Count == 0)
   {
-    System.Console.WriteLine("Which TODO task would you like to remove 🥲");
-    SeeAllTodos();
-    string stringInput = Console.ReadLine();
-    indexInput = int.Parse(stringInput);
-  } while (indexInput > toDoList.Count - 1 && indexInput < 0);
+    System.Console.WriteLine("Try adding some task's jackass.");
+    return toDoList;
+  }
+  else
+  {
+    System.Console.WriteLine("Remove TODO");
+    do
+    {
+      Console.Write("Which TODO task would you like to remove? ");
+      SeeAllTodos();
 
-  toDoList.RemoveAt(indexInput - 1);
-  return toDoList;
+      input = Console.ReadLine();
+
+      // keep looping while input is NOT a valid index
+    } while (!int.TryParse(input, out indexInput) ||
+           indexInput < 1 ||
+           indexInput > toDoList.Count);
+
+    toDoList.RemoveAt(indexInput - 1);
+    return toDoList;
+  }
 }
 
-void Exit()
+bool Exit()
 {
   System.Console.WriteLine("Thank you! See you later alligator!");
+  return shallExit = true;
 }
 
 
