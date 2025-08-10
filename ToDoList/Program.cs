@@ -1,48 +1,34 @@
-﻿List<string> UpperCaseList(List<string> words)
+﻿var numbers = new[] { 10, -8, 2, 12, -17 };
+int nonPositiveCount;
+var onlyPositive = GetOnlyPositive(numbers, out nonPositiveCount);
+foreach (var positiveNumber in onlyPositive)
 {
-        var upperCaseList = new List<string> { };
-        foreach (string word in words)
-        {
-                if (upperCaseList.Contains(word))
-                {
-                        continue;
-                }
-
-                if (IsUpperCase(word))
-                {
-                        upperCaseList.Add(word);
-                }
-        }
-        return upperCaseList;
+        System.Console.WriteLine($"{positiveNumber}");
 }
-
-bool IsUpperCase(string word)
-{
-        foreach (char letter in word)
-        {
-                if (!char.IsUpper(letter))
-                {
-                        return false;
-                }
-        }
-        return true;
-}
+System.Console.WriteLine($"{nonPositiveCount}");
 
 
-        // for (int i = 0; i < words.Count; i++)
-// {
-//         string word = words[i];
-//         foreach (char taco in word)
-//         {
-//                 bool isUpperCase = char.IsUpper(taco);
-//                 if (isUpperCase == true)
-//                 {
-//                         banana.Add(word);
-//                 }
-//         }
-// }
 
 Console.ReadKey();
+
+List<int> GetOnlyPositive(int[] numbers, out int countOfNonPositive)
+{
+        countOfNonPositive = 0;
+        var result = new List<int>();
+
+        foreach (int number in numbers)
+        {
+                if (number > 0)
+                {
+                        result.Add(number);
+                }
+                else
+                {
+                        countOfNonPositive++;
+                }
+        }
+        return result;
+}
 
 // string word;
 
