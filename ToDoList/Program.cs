@@ -1,49 +1,46 @@
-﻿
-List<string> GetOnlyUpperCaseWords(List<string> words)
+﻿List<string> UpperCaseList(List<string> words)
 {
-        var banana = new List<string> { };
-        foreach (var word in words)
+        var upperCaseList = new List<string> { };
+        foreach (string word in words)
         {
-                if (banana.Contains(word))
+                if (upperCaseList.Contains(word))
                 {
                         continue;
-                } if (isUpperCase(word))
+                }
+
+                if (IsUpperCase(word))
                 {
-                        banana.Add(word);
+                        upperCaseList.Add(word);
                 }
         }
-        return banana;
+        return upperCaseList;
+}
 
-        bool isUpperCase(string word)
+bool IsUpperCase(string word)
+{
+        foreach (char letter in word)
         {
-                foreach (char letter in word)
+                if (!char.IsUpper(letter))
                 {
-                        if (!char.IsUpper(letter))
-                        {
-                                return false;
-                        }
+                        return false;
                 }
-                return true;
         }
-
+        return true;
+}
 
 
         // for (int i = 0; i < words.Count; i++)
-        // {
-        //         string word = words[i];
-        //         foreach (char taco in word)
-        //         {
-        //                 bool isUpperCase = char.IsUpper(taco);
-        //                 if (isUpperCase == true)
-        //                 {
-        //                         banana.Add(word);
-        //                 }
-        //         }
-        // }
-        return banana;
-        }
-
-System.Console.WriteLine($"{GetOnlyUpperCaseWords(new string[] { { "howdy", "potato" } })}");
+// {
+//         string word = words[i];
+//         foreach (char taco in word)
+//         {
+//                 bool isUpperCase = char.IsUpper(taco);
+//                 if (isUpperCase == true)
+//                 {
+//                         banana.Add(word);
+//                 }
+//         }
+// }
 
 Console.ReadKey();
 
