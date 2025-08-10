@@ -1,11 +1,20 @@
-﻿var numbers = new[] { 10, -8, 2, 12, -17 };
-int nonPositiveCount;
-var onlyPositive = GetOnlyPositive(numbers, out nonPositiveCount);
-foreach (var positiveNumber in onlyPositive)
+﻿
+bool isParsingSucc;
+
+do
 {
-        System.Console.WriteLine($"{positiveNumber}");
+        System.Console.WriteLine("Enter a number cuh");
+        var userInput = Console.ReadLine();
+if (isParsingSucc = int.TryParse(userInput, out int number))
+{
+        System.Console.WriteLine($"Neato, it worked, the number is {number}");
 }
-System.Console.WriteLine($"{nonPositiveCount}");
+else
+{
+        System.Console.WriteLine("Yo shit chopped cuh");
+}
+} while (!isParsingSucc);
+
 
 
 
