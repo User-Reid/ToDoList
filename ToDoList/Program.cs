@@ -1,15 +1,17 @@
-﻿bool IsAnyWordLongerThan(int length, string[] words)
-        {
-                foreach(var potato in words) {
-                if (potato.Length > length)
-                {
-                        return true;
-                }
-                }
-                return false;
-        }
+﻿var words = new List<string> {
+        "one",
+        "two",
+};
 
-System.Console.WriteLine($"{IsAnyWordLongerThan(5, new string[] {"taco", "bread", "salad", "donut", "pie", "pathagori and therum"})}");
+var moreWords = new string[] {
+        "three", "four", "five"
+};
+words.AddRange(moreWords);
+
+foreach (string taco in words)
+{
+        System.Console.WriteLine($"{taco}");
+} 
 
 Console.ReadKey();
 
