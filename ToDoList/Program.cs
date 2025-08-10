@@ -1,17 +1,49 @@
-﻿var words = new List<string> {
-        "one",
-        "two",
-};
-
-var moreWords = new string[] {
-        "three", "four", "five"
-};
-words.AddRange(moreWords);
-
-foreach (string taco in words)
+﻿
+List<string> GetOnlyUpperCaseWords(List<string> words)
 {
-        System.Console.WriteLine($"{taco}");
-} 
+        var banana = new List<string> { };
+        foreach (var word in words)
+        {
+                if (banana.Contains(word))
+                {
+                        continue;
+                } if (isUpperCase(word))
+                {
+                        banana.Add(word);
+                }
+        }
+        return banana;
+
+        bool isUpperCase(string word)
+        {
+                foreach (char letter in word)
+                {
+                        if (!char.IsUpper(letter))
+                        {
+                                return false;
+                        }
+                }
+                return true;
+        }
+
+
+
+        // for (int i = 0; i < words.Count; i++)
+        // {
+        //         string word = words[i];
+        //         foreach (char taco in word)
+        //         {
+        //                 bool isUpperCase = char.IsUpper(taco);
+        //                 if (isUpperCase == true)
+        //                 {
+        //                         banana.Add(word);
+        //                 }
+        //         }
+        // }
+        return banana;
+        }
+
+System.Console.WriteLine($"{GetOnlyUpperCaseWords(new string[] { { "howdy", "potato" } })}");
 
 Console.ReadKey();
 
